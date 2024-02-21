@@ -1,0 +1,416 @@
+body {
+  --primary-color: #333; 
+  --secondary-color: #272727; 
+  font-family:  sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.87);
+    color:white;
+   
+}
+
+
+.Nav{
+  background-color:  rgba(0, 0, 0, 0.247) !important; 
+}
+
+.text {
+  color: white;
+}
+
+.text:hover{
+  color: white;
+}
+
+.Carrusel {
+  background-color: #111111;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-image: linear-gradient(
+    32deg,
+    rgba(8, 8, 8, 0.74) 30px,
+    transparent
+  );
+  background-size: 60px 60px;
+  background-position: -5px -5px;
+}
+
+
+.Carrusel h1 {
+  color:white;
+  font-size: 75px;
+  font-family: inherit;
+  font-weight: 800;
+  
+
+}
+
+.Carrusel h2{
+  color: white;
+  font-size: 30px;
+  margin:20px;
+  font-family: inherit;
+  font-weight: 800;
+  
+}
+
+.Btns {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 10px;
+}
+
+
+button {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: #fff;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #424242b6;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.About-me {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  margin: 20px;
+}
+
+.About-me h1{
+    font-family: inherit;
+    font-weight: 800;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.About-me p {
+    margin-top: 80px;
+    font-size: 25px;
+    text-align: center;
+    width: 500px;
+    
+}
+
+.Education {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.Education .Card-Certificates {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  margin-top: 50px;
+}
+
+.Card-Certificates {
+  transition: all 0.3s;
+}
+
+.Card-Certificates:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.Education  img {
+  width: 95%;
+  height: 95%;
+  border-radius: 8px;
+  
+}
+
+
+
+.Projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+  flex-direction: column;
+  color: white;
+  
+ 
+}
+
+
+
+.Projects::before {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  top: 30%;
+  right: 7%;
+}
+
+
+
+.Projects h1 {
+  font-family: inherit;
+  font-weight: 800;
+}
+
+.Card {
+  width: 500px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  transition: all ease 0.3s;
+  margin: 50px;
+}
+
+
+
+.Projects card .title {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.Projects card div strong {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.Projects card div p {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.Projects card div span {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.Projects card div span:nth-child(3) {
+  font-weight: 500;
+  margin-right: 0.2rem;
+}
+
+.Projects card:hover {
+  box-shadow: 0px 0px 20px 1px #ffbb763f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+.Card div a{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.Card div a img {
+  width: 130px;
+  height: 100%;
+  border-radius: 8px;
+}
+
+
+
+.Footer {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  color:white;
+}
+
+.Footer p {
+ color: white;
+
+font-size: 30px;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .Carrusel {
+    height: 300px;
+  }
+
+  .Carrusel h1 {
+    font-size: 40px;
+  }
+
+  .Carrusel h2 {
+    font-size: 20px;
+  }
+
+  .Btns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .About-me p {
+    width: 100%;
+  }
+
+  .Education .Card-Certificates {
+    width: 300px;
+    height: 300px;
+  }
+
+  .Education img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .Projects {
+    margin: 50px;
+  }
+
+  .Card {
+    width: 300px;
+    height: 100px;
+  }
+
+  .Projects card .title {
+    font-size: 1.5rem;
+  }
+
+  .Projects card div strong {
+    margin-bottom: 0.3rem;
+  }
+
+  .Projects card div p {
+    font-size: 0.8em;
+  }
+
+  .Projects card div span {
+    font-size: 0.6rem;
+  }
+
+  .Card div a img {
+    width: 100px;
+  }
+
+  .Footer p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .Carrusel {
+    height: 400px;
+  }
+
+  .Carrusel h1 {
+    font-size: 50px;
+  }
+
+  .Carrusel h2 {
+    font-size: 25px;
+  }
+
+  .Btns {
+    gap: 15px;
+  }
+
+  .About-me p {
+    width: 80%;
+  }
+
+  .Education .Card-Certificates {
+    width: 350px;
+    height: 350px;
+  }
+
+  .Education img {
+    width: 92%;
+    height: 92%;
+  }
+
+  .Projects {
+    margin: 100px;
+  }
+
+  .Card {
+    width: 400px;
+    height: 120px;
+  }
+
+  .Projects card .title {
+    font-size: 1.8rem;
+  }
+
+  .Projects card div strong {
+    margin-bottom: 0.4rem;
+  }
+
+  .Projects card div p {
+    font-size: 0.85em;
+  }
+
+  .Projects card div span {
+    font-size: 0.65rem;
+  }
+
+  .Card div a img {
+    width: 120px;
+  }
+
+  .Footer p {
+    font-size: 25px;
+  }
+}
