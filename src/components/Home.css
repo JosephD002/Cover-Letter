@@ -130,6 +130,13 @@ button:after {
     
 }
 
+.About-me h2 {
+  font-family: inherit;
+    font-weight: 800;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
 .Education {
     display: flex;
     justify-content: space-around;

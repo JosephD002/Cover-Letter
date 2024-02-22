@@ -50,9 +50,9 @@ Projects
       </div>
      
       <div id="Education" className="Education">
-       <div className='Card-Certificates'>  <img src="public\images\Javascript.png" alt="Javascript"/></div>
+       <div className='Card-Certificates'>  <img src="https://media.licdn.com/dms/image/D4E2DAQGWwuTCB2781A/profile-treasury-image-shrink_800_800/0/1705529594218?e=1709244000&v=beta&t=3U-RTWjmijfzy5SPg5X0ekhMWgGX-sPPGUZAddLCI8M" alt="Javascript"/></div>
 
-       <div className='Card-Certificates'><img src="public\images\React Js.png" alt="React JS"/></div>
+       <div className='Card-Certificates'><img src="https://media.licdn.com/dms/image/D4E2DAQHlQzhjYLpDeA/profile-treasury-image-shrink_800_800/0/1708274576082?e=1709244000&v=beta&t=r7-HKKfsSSk1IRJQAHfBoZUMtrQKMzdtK_wV4uNwJq4" alt="React JS"/></div>
       </div>
       
       <div id="Projects" className="Projects">
