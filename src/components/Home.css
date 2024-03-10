@@ -506,3 +506,13 @@ button:after {
   }
   
 }
+
+@media only screen and (max-width: 364px) {
+  .Studies {
+    justify-content: center;
+  }
+
+  .About-me h1 {
+    font-size: 40px ;
+  }
+}
