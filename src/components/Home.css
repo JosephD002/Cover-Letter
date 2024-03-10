@@ -4,14 +4,15 @@ body {
   font-family:  sans-serif;
     font-weight: 800;
     line-height: 1.5;
-    background-color: rgba(0, 0, 0, 0.87);
-    color:white;
+    background-color: rgba(24, 24, 24, 0.096);
+    color:rgb(0, 0, 0)
    
 }
+/**rgba(24, 24, 24, 0.87);*/
 
 
 .Nav{
-  background-color:  rgba(0, 0, 0, 0.247) !important; 
+  background-color:  black !important; 
 }
 
 .text {
@@ -121,8 +122,14 @@ button:after {
     margin-top: 50px;
     font-size: 50px;
 }
-
-.About-me p {
+.About-me-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.About-me-text p{
     margin-top: 80px;
     font-size: 25px;
     text-align: center;
@@ -134,15 +141,57 @@ button:after {
   font-family: inherit;
     font-weight: 800;
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 40px;
 }
+
+.Studies {
+  width: 70%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+ margin-bottom: 70px;
+ gap: 25px;
+ 
+}
+
+.card-icon {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+
+ }
+
+.Studies img {
+  width: 150px;
+  height: 150px;
+  filter: drop-shadow(0px 5px 11px #000000);
+  transition: transform 0.3s ease-in-out;
+}
+
+.Studies img:hover {
+  transform: scale(1.1);
+ 
+}
+
 
 .Education {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
    
 }
+
+
 
 .Education .Card-Certificates {
   display: flex;
@@ -151,20 +200,20 @@ button:after {
   align-items: center;
   width: 400px;
   height: 400px;
-  background-color: rgba(255, 255, 255, 0.074);
+  background-color:  rgba(192, 190, 190, 0.473);
   border: 1px solid rgba(255, 255, 255, 0.222);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 0.7rem;
   margin-top: 50px;
+  transition: 0.5s ease-in-out;
 }
 
-.Card-Certificates {
-  transition: all 0.3s;
-}
+
 
 .Card-Certificates:hover {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
 }
 
 .Education  img {
@@ -202,49 +251,49 @@ button:after {
 .Projects h1 {
   font-family: inherit;
   font-weight: 800;
+  color: rgb(0, 0, 0);
 }
 
 .Card {
-  width: 500px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.074);
+  flex-direction: column-reverse;
+  background-color: rgba(192, 190, 190, 0.397);
   border: 1px solid rgba(255, 255, 255, 0.222);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 0.7rem;
   transition: all ease 0.3s;
   margin: 50px;
+  gap: 20px;
 }
 
 
 
-.Projects card .title {
+.Card .title {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 0.1em;
+  color: rgb(0, 0, 0);
+  font-family: inherit;
 }
 
-.Projects card div strong {
+.Card div strong {
   display: flex;
   margin-bottom: 0.5rem;
 }
 
-.Projects card div p {
+.Card div p {
   margin: 0;
   font-size: 0.9em;
   font-weight: 300;
   letter-spacing: 0.1em;
 }
 
-.Projects card div span {
-  font-size: 0.7rem;
-  font-weight: 300;
-}
-
+ 
 .Projects card div span:nth-child(3) {
   font-weight: 500;
   margin-right: 0.2rem;
@@ -262,7 +311,7 @@ button:after {
 }
 
 .Card div a img {
-  width: 130px;
+  width: 200px;
   height: 100%;
   border-radius: 8px;
 }
@@ -281,10 +330,20 @@ button:after {
   color:white;
 }
 
-.Footer p {
- color: white;
+.Link {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  gap: 30px;
+  color:#272727;
+  transition: 0.5s;
+}
 
-font-size: 30px;
+.Link:hover{
+  color:white;
 }
 
 
@@ -308,10 +367,22 @@ font-size: 30px;
     flex-direction: column;
     gap: 20px;
   }
-
+  .About-me-text {
+    flex-direction: column;
+  }
   .About-me p {
     width: 100%;
   }
+  .Studies  {
+    width: 100%;
+    height: auto;
+    
+  }
+   
+.Education {
+  flex-direction: column;
+  height: auto;
+}
 
   .Education .Card-Certificates {
     width: 300px;
@@ -328,8 +399,8 @@ font-size: 30px;
   }
 
   .Card {
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
 
   .Projects card .title {
@@ -374,6 +445,10 @@ font-size: 30px;
     gap: 15px;
   }
 
+  .About-me-text {
+    flex-direction: column;
+  }
+
   .About-me p {
     width: 80%;
   }
@@ -393,8 +468,8 @@ font-size: 30px;
   }
 
   .Card {
-    width: 400px;
-    height: 120px;
+    width: 300px;
+    height: 300px;
   }
 
   .Projects card .title {
@@ -414,10 +489,20 @@ font-size: 30px;
   }
 
   .Card div a img {
-    width: 120px;
+    width: 200px;
+    height: 100%;
   }
 
   .Footer p {
     font-size: 25px;
   }
+}
+
+@media only screen and (max-width: 850px) {
+ 
+
+  .Education{
+    flex-direction: column;
+  }
+  
 }
